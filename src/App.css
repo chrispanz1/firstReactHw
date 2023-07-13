@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  
+}
+.bigBox{
+  border:solid black;
 }
 
 .App-logo {

@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import toy from './model/toy';
+import Toy from './components/Toy';
+const state={
+  toy
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toy list={state.toy[0]}/>
+      <Toy list={state.toy[1]}/>
+      <Toy list={state.toy[2]}/>
+      
     </div>
   );
 }
