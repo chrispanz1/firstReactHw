@@ -2,16 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 import toy from './model/toy';
 import Toy from './components/Toy';
-const state={
-  toy
-}
+import List from './components/List';
+
 
 function App() {
+  console.log("hi",toy)
   return (
     <div className="App">
-      <Toy list={state.toy[0]}/>
-      <Toy list={state.toy[1]}/>
-      <Toy list={state.toy[2]}/>
+      
+     {toy.map((toyValue)=>{
+      return(
+        <Toy list={toyValue} />
+      )
+
+
+     })}
+
+     <List />
       
     </div>
   );

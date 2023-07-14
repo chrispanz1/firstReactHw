@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Toy(props) {
+  console.log(props)
   return (
     <div className='bigBox'>
         

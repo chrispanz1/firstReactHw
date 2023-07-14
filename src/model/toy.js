@@ -19,10 +19,15 @@ const toy1 =
     gender:'anyone',
     price:'12.99'
   }
+  const toy4={
+    shape:'circular',
+    type:'pong Pattle',
+    gender:'anyone',
+    price:'13.99'
+  }
   
   
+module.exports=[toy1,toy2,toy3,toy4]
 
 
 
-
-module.exports = [toy1,toy2,toy3]
